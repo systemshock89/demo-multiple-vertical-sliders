@@ -16,12 +16,10 @@ body {
   @media only screen and (max-width: 767px) {
     font-size: rem(14);
   }
-  font-family: 'roboto-my', 'roboto-my Fallback', sans-serif;
-  color: var(--color-text-600);
   line-height: 1.4;
 
   min-width: 320px;
   position: relative;
 
-  background-color: #fff;
+  background-color: #030306;
 }
