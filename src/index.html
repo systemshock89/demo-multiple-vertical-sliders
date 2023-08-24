@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    @@include('head.html', {
+    "title": "Scroll portfolio",
+    "description": "Scroll portfolio"
+    })
+</head>
+
+<body>
+
+    <div class="main-wrapper">
+
+        <div class="swiper slider slider1">
+            <div class="swiper-wrapper slider__wrapper">
+
+                @@for (var i = 1; i < 6; i++) {
+                <div class="swiper-slide slider__item">
+                    <img src="../img/`+[i]+`.webp" class="slider__img" alt="" loading="lazy">
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                }
+
+            </div>
+        </div>
+
+        <div class="swiper slider slider2">
+            <div class="swiper-wrapper slider__wrapper">
+
+                @@for (var i = 7; i < 12; i++) {
+                <div class="swiper-slide slider__item">
+                    <img src="../img/`+[i]+`.webp" class="slider__img" alt="" loading="lazy">
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                }
+
+            </div>
+        </div>
+
+        <div class="swiper slider slider3">
+            <div class="swiper-wrapper slider__wrapper">
+
+                @@for (var i = 13; i < 18; i++) {
+                <div class="swiper-slide slider__item">
+                    <img src="../img/`+[i]+`.webp" class="slider__img" alt="" loading="lazy">
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                }
+
+            </div>
+        </div>
+
+        <div class="swiper slider slider4">
+            <div class="swiper-wrapper slider__wrapper">
+
+                @@for (var i = 19; i < 24; i++) {
+                <div class="swiper-slide slider__item">
+                    <img src="../img/`+[i]+`.webp" class="slider__img" alt="" loading="lazy">
+                    <div class="swiper-lazy-preloader"></div>
+                </div>
+                }
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/bundle.min.js" defer></script>
+
+</body>
+</html>

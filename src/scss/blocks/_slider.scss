@@ -1,0 +1,68 @@
+.main-wrapper{
+  height: 100%;
+  display: flex;
+  gap: var(--index);
+  background-image: url('../img/bg.webp');
+  background-size: cover;
+  background-position: center;
+
+  @media only screen and (max-width: 991px) {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .slider{
+    transform: rotate(12.5deg);
+    overflow: visible; // чтобы слайды не обрезались по краям слайдера
+    // чтобы слайдеры двигались в противоположном направлении
+    &:nth-child(odd) {
+      transform: rotate(192.5deg);
+      .slider__img {
+        transform: rotate(-180deg); // изображение в слайде переворачиваем обратно
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .slider .swiper-lazy-preloader{
+    display: none;
+  }
+}
+
+.slider__wrapper{
+  transition: var(--transition)!important;
+  will-change: transform;
+  @media only screen and (max-width: 991px) {
+    flex-direction: column;
+  }
+}
+
+.slider__item{
+  width: 21vw;
+  margin-bottom: calc(var(--index) * 2.6);
+  cursor: pointer;
+  transition: transform var(--transition);
+  will-change: transform;
+  box-shadow: rgb(0 0 0 / .15) 0 0 30px 10px;
+  &:hover {
+    transform: scale(1.04);
+  }
+
+  @media only screen and (max-width: 991px) {
+    width:80vw;
+    max-width: 564px;
+    &:first-child{
+      margin-top: calc(var(--index) * 2.6);
+    }
+  }
+
+}
+
+.slider__img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
