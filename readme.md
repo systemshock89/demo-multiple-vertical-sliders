@@ -1,5 +1,5 @@
-<h1>Scroll portfolio</h1>
-<p><a href="https://systemshock89.github.io/demo-scroll-portfolio/">See demo</a></p>
+<h1>Multiple vertical sliders</h1>
+<p><a href="https://systemshock89.github.io/multiple-vertical-sliders/">See demo</a></p>
 
 <h2>Used features</h2>
 <ul>
