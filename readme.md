@@ -1,5 +1,5 @@
 <h1>Multiple vertical sliders</h1>
-<p><a href="https://systemshock89.github.io/multiple-vertical-sliders/">See demo</a></p>
+<p><a href="https://systemshock89.github.io/demo-multiple-vertical-sliders/">See demo</a></p>
 
 <h2>Used features</h2>
 <ul>
